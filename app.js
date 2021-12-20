@@ -1,6 +1,10 @@
-const {Telegraf} = require('telegraf');
+const appConfig = require('./conf/config.json');
 
-const bot = new Telegraf('5076186548:AAH8I1s4k8yxFl4UoXJWA5NIHxbFUaASedw');
+const { Telegraf } = require('telegraf');
+
+const constant = require('./constant');
+
+const bot = new Telegraf(appConfig.bottokens.temngaobot);
 
 bot.command('start', ctx => {
   console.log(ctx.from)
