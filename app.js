@@ -1,10 +1,10 @@
-const appConfig = require('./conf/config.json');
+const secret = require('./conf/secret.json');
 
 const { Telegraf } = require('telegraf');
 
 const constant = require('./constant');
 
-const bot = new Telegraf(appConfig.bottokens.temngaobot);
+const bot = new Telegraf(secret.bottokens.temngaobot);
 
 bot.command('start', ctx => {
   console.log(ctx.from)
