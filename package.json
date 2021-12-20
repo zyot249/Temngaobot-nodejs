@@ -1,0 +1,15 @@
+{
+  "name": "temngaobot",
+  "version": "1.0.0",
+  "description": "Tem Ngao Bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shynnnnnn",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^4.0.1",
+    "telegraf": "^4.5.2"
+  }
+}
